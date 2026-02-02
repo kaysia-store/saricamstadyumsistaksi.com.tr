@@ -227,6 +227,20 @@ img {
     box-shadow: var(--shadow-md);
 }
 
+.btn-install {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    display: none;
+    /* Hidden by default, shown via JS */
+}
+
+.btn-install:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
 .btn-full {
     width: 100%;
 }
@@ -495,6 +509,22 @@ img {
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    /* Force single column and contain overflow */
+    .grid-cards {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 }
 

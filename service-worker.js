@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sis-taksi-v1';
+const CACHE_NAME = 'sis-taksi-v2';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
@@ -49,33 +49,50 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-// Fetch Event (Offline Capability)
+// Fetch Event (Network First for HTML, Cache First for assets)
 self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request)
-            .then((response) => {
-                // Cache hit - return response
-                if (response) {
+    // Skip cross-origin requests
+    if (!event.request.url.startsWith(self.location.origin)) {
+        return;
+    }
+
+    const isHTML = event.request.headers.get('accept').includes('text/html');
+
+    if (isHTML) {
+        // Network First Strategy for HTML
+        event.respondWith(
+            fetch(event.request)
+                .then((response) => {
+                    // Update cache with new version found on network
+                    const responseToCache = response.clone();
+                    caches.open(CACHE_NAME).then((cache) => {
+                        cache.put(event.request, responseToCache);
+                    });
                     return response;
-                }
-                return fetch(event.request).then(
-                    (response) => {
-                        // Check if we received a valid response
-                        if (!response || response.status !== 200 || response.type !== 'basic') {
-                            return response;
-                        }
-
-                        // Clone the response
+                })
+                .catch(() => {
+                    // Fallback to cache if network fails
+                    return caches.match(event.request);
+                })
+        );
+    } else {
+        // Cache First Strategy for Assets (Images, CSS, JS)
+        // This is more efficient. To refresh these "once a day", 
+        // we can rely on standard browser cache headers or just versioning.
+        // For this user 'refresh daily' request, keeping them cached is better for PWA feeling.
+        // The HTML being Network First ensures that if we update the version in HTML (e.g. valid cache busting),
+        // the new assets will be fetched.
+        event.respondWith(
+            caches.match(event.request)
+                .then((response) => {
+                    return response || fetch(event.request).then((response) => {
                         const responseToCache = response.clone();
-
-                        caches.open(CACHE_NAME)
-                            .then((cache) => {
-                                cache.put(event.request, responseToCache);
-                            });
-
+                        caches.open(CACHE_NAME).then((cache) => {
+                            cache.put(event.request, responseToCache);
+                        });
                         return response;
-                    }
-                );
-            })
-    );
+                    });
+                })
+        );
+    }
 });

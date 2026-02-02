@@ -44,9 +44,29 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             deferredPrompt = e;
             installBtn.style.display = 'flex';
+
+            // Show Hero Button if available
+            const heroBtn = document.getElementById('heroInstallBtn');
+            if (heroBtn) {
+                heroBtn.style.display = 'inline-block';
+
+                heroBtn.addEventListener('click', () => {
+                    heroBtn.style.display = 'none';
+                    installBtn.style.display = 'none';
+                    if (deferredPrompt) {
+                        deferredPrompt.prompt();
+                        deferredPrompt.userChoice.then((choiceResult) => {
+                            if (choiceResult.outcome === 'accepted') {
+                                console.log('User accepted the install prompt');
+                            }
+                            deferredPrompt = null;
+                        });
+                    }
+                });
+            }
         });
 
-        // Click handler
+        // Click handler for floating button
         installBtn.addEventListener('click', (e) => {
             installBtn.style.display = 'none';
             if (deferredPrompt) {
