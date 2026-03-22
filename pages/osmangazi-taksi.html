@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osmangazi Taksi | Sar��am Stadyum Sis Taksi</title>
-    <meta name="description"
-        content="Osmangazi Mahallesi taksi hizmeti. Sar��am'da g�venli, aileye uygun, h�zl� taksi. 7/24 a��k durak.">
+    <title>Osmangazi Taksi | Sarıçam Stadyum Sis Taksi</title>
+    <meta name="description" content="Osmangazi Mahallesi sakinleri için gece gündüz demeden çalışan kesintisiz taksi durağınız. Temiz araçlar ve güler yüzlü hizmetle yanınızdayız.">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="manifest" href="../manifest.json">
     <meta name="theme-color" content="#f7b500">
     <link rel="canonical" href="https://saricamstadyumsistaksi.com.tr/pages/osmangazi-taksi.html">
-    <meta property="og:title" content="Osmangazi Taksi | Sar��am">
-    <meta property="og:description" content="Osmangazi mahallesinde 7/24 taksi.">
+    
+    <meta property="og:title" content="Osmangazi Taksi | Sarıçam">
+    <meta property="og:description" content="Osmangazi Mahallesi sakinleri için gece gündüz demeden çalışan kesintisiz taksi durağınız. Temiz araçlar ve güler yüzlü hizmetle yanınızdayız.">
     <meta property="og:type" content="website">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "name": "Sar��am Stadyum Sis Taksi - Osmangazi",
-      "telephone": "+905301309101",
-      "areaServed": "Osmangazi, Sar��am"
-    }
-    </script>
 
     <!-- HTTPS Force -->
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -33,15 +23,51 @@
         }
     </script>
 </head>
-
 <body>
-    <header class="header">
+
+    <!-- Mobile App Panel (Karşılama Ekranı) -->
+    <section class="mobile-app-panel" id="mobileAppPanel">
+        <div class="mp-content">
+            <div class="mp-logo">
+                <img src="../favicon.svg" alt="Sarıçam Taksi Logo">
+                <h2 class="mp-logo-text">SİS TAKSİ</h2>
+            </div>
+            <h1 class="mp-title">Hızlı Taksi Çağır</h1>
+            
+            <div class="mp-actions">
+                <a href="tel:+905301309101" class="mp-btn mp-btn-call">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>Telefonla Taksi Çağır</span>
+                </a>
+                
+                <button type="button" id="mpBtnWhatsapp" class="mp-btn mp-btn-wa">
+                    <img src="../walogo.png" alt="WhatsApp" width="24" height="24">
+                    <span>Whatsapp ile Taksi Çağır!</span>
+                </button>
+                
+                <button type="button" id="mpBtnSite" class="mp-btn mp-btn-site" onclick="document.getElementById('mainHeader').scrollIntoView({behavior: 'smooth'})">
+                    <span>Siteye Git</span>
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mp-footer">
+            <p class="mp-discount">Taksimetre de %30'a varan indirim!</p>
+            <p class="mp-seo-text">Osmangazi Mahallesi sakinleri için gece gündüz demeden çalışan kesintisiz taksi durağınız. Temiz araçlar ve güler yüzlü hizmetle yanınızdayız.</p>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="header" id="mainHeader">
         <div class="container header-inner">
-            <div class="logo"><a href="../index.html" style="text-decoration:none; color:inherit;">SARI�AM STADYUM S�S
-                    <span>TAKS�</span></a></div>
+            <div class="logo">
+                <a href="../index.html" style="text-decoration:none; color:inherit;">
+                    SARIÇAM STADYUM SİS <span>TAKSİ</span>
+                </a>
+            </div>
             <nav class="nav-desktop">
                 <a href="../index.html">Ana Sayfa</a>
-                <a href="../index.html#iletisim">�leti�im</a>
             </nav>
             <div class="header-cta">
                 <a href="https://wa.me/905301309101" class="btn-header">WhatsApp</a>
@@ -50,68 +76,121 @@
         </div>
     </header>
 
+    <!-- Content -->
     <div class="container" style="padding: 4rem 1rem;">
         <div class="page-content">
-            <h1>Osmangazi Taksi – Sar��am��n G�venli Dura��</h1>
+            <h1>Osmangazi Taksi Hizmeti</h1>
 
-            <p>Sar��am il�esinin k�kl� ve huzurlu semtlerinden biri olan <strong>Osmangazi Mahallesi</strong>, aile
-                ya�am�n�n yo�un oldu�u nezih bir b�lgedir. Bizler de <strong>Sar��am Stadyum Sis Taksi</strong> olarak,
-                Osmangazi halk�m�z�n kom�usu, esnaf� ve g�venilir ula��m partneri olmaktan gurur duyuyoruz. Mahallenizde
-                7 g�n 24 saat hizmet veren bir taksi dura�� ar�yorsan�z, do�ru adrestesiniz.</p>
+            <p>Osmangazi Mahallesi sakinleri için gece gündüz demeden çalışan kesintisiz taksi durağınız. Temiz araçlar ve güler yüzlü hizmetle yanınızdayız. Stadyum Sis Taksi olarak bölgedeki en hızlı ve güvenilir taksi çözümlerini sunuyoruz.</p>
 
-            <h2>Aileniz ��in G�venilir Ula��m</h2>
-            <p>Taksiye bindi�inizde, �zellikle aileniz seyahat ediyorsa, "g�ven" en �nemli unsurdur. Şof�r kadromuz,
-                sab�ka kay�tlar� temiz, psikoteknik belgeleri tam ve trafikte sayg�l� ki�ilerden olu�ur. �ocu�unuzu
-                okula, e�inizi i�e veya anne-baban�z� hastaneye g�nderirken g�z�n�z arkada kalmaz. Osmangazi sokaklar�n�
-                avucumuzun i�i gibi biliyor, sizi en g�venli g�zergahlardan g�t�r�yoruz.</p>
-
-            <h3>Osmangazi'den Heryere Ula��m</h3>
-            <p>Osmangazi mahalleseinden Adana'n�n her noktas�na konforlu ula��m sa�l�yoruz:</p>
-            <ul>
-                <li><strong>Şehir Merkezi:</strong> Trafik stresine girmeden merkeze inin.</li>
-                <li><strong>Hastaneler:</strong> Balcal�, Şehir Hastanesi gibi sa�l�k kurumlar�na acil ula��m.</li>
-                <li><strong>Otogar & Havaliman�:</strong> Bavullar�n�zla u�ra�madan kap�dan kap�ya transfer.</li>
-            </ul>
+            <h2>Bölgeye Hakim Tecrübeli Şoförler</h2>
+            <p>Osmangazi bölgesinin tüm sokaklarına hakimiz. Konumunuzu WhatsApp üzerinden gönderdiğiniz anda en kısa rotadan yanınıza ulaşıyoruz. Temiz, konforlu araçlarımız ve güvenilir ekibimizle yolculuğunuzun tadını çıkarın. Uzaklık veya saat bizim için sorun değil; 7/24 kesintisiz hizmet veriyoruz.</p>
 
             <div class="cta-block">
-                <h3>Osmangazi'de Taksi Beklemeyin</h3>
-                <p>�a�r� b�rak�n, hemen kap�n�zda olal�m.</p>
-                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                    <a href="https://wa.me/905301309101" class="btn btn-primary">WhatsApp</a>
-                    <a href="tel:+905301309101" class="btn btn-secondary">Ara: 0530 130 91 01</a>
+                <h3>Hemen Taksi Çağırın</h3>
+                <p>Beklemek yok, güvenli ulaşım var.</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <button type="button" class="btn btn-primary" onclick="document.getElementById('mobileAppPanel').scrollIntoView({behavior: 'smooth'})">Yukarı Dön ve Taksi Çağır</button>
+                    <a href="tel:+905301309101" class="btn btn-secondary">Hemen Ara</a>
                 </div>
             </div>
 
-            <h2>Ekonomik ve Şeffaf Fiyatlar</h2>
-            <p>Osmangazi'de taksi �cretleri konusunda kafan�zda soru i�areti kalmas�n. Taksimetremiz her zaman a��kt�r
-                ve belediyenin belirledi�i resmi tarifeler uygulan�r. K�sa mesafe yolcu almayan veya yolu uzatan taksici
-                anlay���na kar��y�z. M��teri memnuniyeti odakl� �al��ma prensibimizle, her yolculu�unuzda ayn� kaliteyi
-                garanti ediyoruz.</p>
-
             <div class="internal-links">
-                <h4>Hizmet B�lgeleri</h4>
+                <h4>Hizmet Bölgeleri</h4>
                 <div class="link-list">
-                    <a href="gultepe-taksi.html" class="link-tag">G�ltepe</a>
-                    <a href="carkipare-taksi.html" class="link-tag">�ark�pare</a>
-                    <a href="balcali-taksi.html" class="link-tag">Balcal�</a>
+                    <a href="akkuyu-taksi.html" class="link-tag">Akkuyu</a>
+                    <a href="atu-taksi.html" class="link-tag">ATÜ</a>
+                    <a href="balcali-taksi.html" class="link-tag">Balcalı</a>
+                    <a href="carkipare-taksi.html" class="link-tag">Çarkıpare</a>
+                    <a href="gultepe-taksi.html" class="link-tag">Gültepe</a>
+                    <a href="yesiltepe-taksi.html" class="link-tag">Yeşiltepe</a>
                     <a href="../index.html" class="link-tag">Ana Sayfa</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Floating Buttons -->
     <div class="floating-actions">
-        <a href="https://wa.me/905301309101" class="fab fab-whatsapp">
+        <!-- Replaced with a unique id so script.js sees it inside subpages -->
+        <a href="https://wa.me/905301309101" class="fab fab-whatsapp" id="fabBtnWhatsapp">
             <img src="../walogo.png" alt="WhatsApp" width="50" height="50" style="border-radius: 50%;">
         </a>
-        <a href="tel:+905301309101" class="fab fab-call"><svg viewBox="0 0 24 24" width="28" height="28"
-                fill="currentColor">
-                <path
-                    d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-            </svg></a>
+        <a href="tel:+905301309101" class="fab fab-call">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+        </a>
     </div>
-    <script src="../script.js"></script>
+
+    <!-- WhatsApp Script Logic for this page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const waBtns = document.querySelectorAll('#fabBtnWhatsapp, #mpBtnWhatsapp');
+            // Check if modal exists
+            if (!document.getElementById('locationModal')) {
+                const modalHTML = `
+                <div id="locationModal" class="modal-overlay">
+                    <div class="modal-content">
+                        <h3 class="modal-title">Konum Paylaşmak İster misiniz?</h3>
+                        <p>Size en yakın aracımızı yönlendirebilmemiz için WhatsApp üzerinden konumunuzu paylaşabilirsiniz.</p>
+                        <div class="modal-actions">
+                            <button id="btnLocationYes" class="btn-modal btn-yes">📍 Evet, Paylaş</button>
+                            <button id="btnLocationNo" class="btn-modal btn-no">Hayır, Devam Et</button>
+                        </div>
+                    </div>
+                </div>`;
+                document.body.insertAdjacentHTML('beforeend', modalHTML);
+            }
+            
+            const modal = document.getElementById('locationModal');
+            const btnYes = document.getElementById('btnLocationYes');
+            const btnNo = document.getElementById('btnLocationNo');
+            const PHONE_NUMBER = '905301309101';
+
+            waBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modal.style.display = 'flex';
+                });
+            });
+
+            btnNo.addEventListener('click', () => {
+                window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                modal.style.display = 'none';
+            });
+
+            btnYes.addEventListener('click', () => {
+                btnYes.textContent = 'Konum Alınıyor...';
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const lat = position.coords.latitude;
+                            const lng = position.coords.longitude;
+                            const mapLink = `https://www.google.com/maps?q=${lat},${lng}`;
+                            const message = `Merhaba, taksi çağırmak istiyorum. Bölge: Osmangazi. Konumum: ${mapLink}`;
+                            const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+                            window.location.href = url;
+                            btnYes.textContent = '📍 Evet, Paylaş';
+                            modal.style.display = 'none';
+                        },
+                        (error) => {
+                            window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                            btnYes.textContent = '📍 Evet, Paylaş';
+                            modal.style.display = 'none';
+                        }
+                    );
+                } else {
+                    window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                }
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
-

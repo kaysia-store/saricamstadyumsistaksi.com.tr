@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boynuyo�un Taksi | Sar��am Stadyum Sis Taksi</title>
-    <meta name="description"
-        content="Boynuyo�un (Boynuyoğun) Mahallesi ve �evresinde 7/24 taksi hizmeti. K�y yollar� ve merkeze h�zl� transfer. G�venilir �of�rler.">
+    <title>Boynuyoğun Taksi | Sarıçam Stadyum Sis Taksi</title>
+    <meta name="description" content="Sarıçam Boynuyoğun mahallesi ve köy yollarında rahat, güvenli ve VIP standartlarda ulaşım. Şehir merkezinden veya Boynuyoğun içinden 7/24 taksi çağırabilirsiniz.">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="manifest" href="../manifest.json">
     <meta name="theme-color" content="#f7b500">
     <link rel="canonical" href="https://saricamstadyumsistaksi.com.tr/pages/boynuyogun-taksi.html">
-    <meta property="og:title" content="Boynuyo�un Taksi | Sar��am">
-    <meta property="og:description" content="Boynuyo�un mevkiinde 7/24 taksi.">
+    
+    <meta property="og:title" content="Boynuyoğun Taksi | Sarıçam">
+    <meta property="og:description" content="Sarıçam Boynuyoğun mahallesi ve köy yollarında rahat, güvenli ve VIP standartlarda ulaşım. Şehir merkezinden veya Boynuyoğun içinden 7/24 taksi çağırabilirsiniz.">
     <meta property="og:type" content="website">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "name": "Sar��am Stadyum Sis Taksi - Boynuyo�un",
-      "telephone": "+905301309101",
-      "areaServed": "Boynuyo�un, Sar��am"
-    }
-    </script>
 
     <!-- HTTPS Force -->
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -33,15 +23,51 @@
         }
     </script>
 </head>
-
 <body>
-    <header class="header">
+
+    <!-- Mobile App Panel (Karşılama Ekranı) -->
+    <section class="mobile-app-panel" id="mobileAppPanel">
+        <div class="mp-content">
+            <div class="mp-logo">
+                <img src="../favicon.svg" alt="Sarıçam Taksi Logo">
+                <h2 class="mp-logo-text">SİS TAKSİ</h2>
+            </div>
+            <h1 class="mp-title">Hızlı Taksi Çağır</h1>
+            
+            <div class="mp-actions">
+                <a href="tel:+905301309101" class="mp-btn mp-btn-call">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>Telefonla Taksi Çağır</span>
+                </a>
+                
+                <button type="button" id="mpBtnWhatsapp" class="mp-btn mp-btn-wa">
+                    <img src="../walogo.png" alt="WhatsApp" width="24" height="24">
+                    <span>Whatsapp ile Taksi Çağır!</span>
+                </button>
+                
+                <button type="button" id="mpBtnSite" class="mp-btn mp-btn-site" onclick="document.getElementById('mainHeader').scrollIntoView({behavior: 'smooth'})">
+                    <span>Siteye Git</span>
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mp-footer">
+            <p class="mp-discount">Taksimetre de %30'a varan indirim!</p>
+            <p class="mp-seo-text">Sarıçam Boynuyoğun mahallesi ve köy yollarında rahat, güvenli ve VIP standartlarda ulaşım. Şehir merkezinden veya Boynuyoğun içinden 7/24 taksi çağırabilirsiniz.</p>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="header" id="mainHeader">
         <div class="container header-inner">
-            <div class="logo"><a href="../index.html" style="text-decoration:none; color:inherit;">SARI�AM STADYUM S�S
-                    <span>TAKS�</span></a></div>
+            <div class="logo">
+                <a href="../index.html" style="text-decoration:none; color:inherit;">
+                    SARIÇAM STADYUM SİS <span>TAKSİ</span>
+                </a>
+            </div>
             <nav class="nav-desktop">
                 <a href="../index.html">Ana Sayfa</a>
-                <a href="../index.html#iletisim">�leti�im</a>
             </nav>
             <div class="header-cta">
                 <a href="https://wa.me/905301309101" class="btn-header">WhatsApp</a>
@@ -50,49 +76,34 @@
         </div>
     </header>
 
+    <!-- Content -->
     <div class="container" style="padding: 4rem 1rem;">
         <div class="page-content">
-            <h1>Boynuyo�un (Boynuyoğun) Taksi Hizmeti</h1>
+            <h1>Boynuyoğun Taksi Hizmeti</h1>
 
-            <p>Sar��am il�esinin y�z�l��m� geni� ve do�ayla i� i�e mahallelerinden biri olan <strong>Boynuyo�un</strong>
-                (halk aras�nda bilinen ad�yla Boynuyoğun), ula��m konusunda �zel bir hizmet gerektirir. Şehir merkezine
-                olan mesafesi ve da��n�k yerle�imi sebebiyle, taksi ihtiyac� burada daha da kritiktir. <strong>Stadyum
-                    Sis Taksi</strong> olarak, Boynuyo�un b�lgesine 7 g�n 24 saat kesintisiz ara� g�nderimi sa�l�yoruz.
-            </p>
+            <p>Sarıçam Boynuyoğun mahallesi ve köy yollarında rahat, güvenli ve VIP standartlarda ulaşım. Şehir merkezinden veya Boynuyoğun içinden 7/24 taksi çağırabilirsiniz. Stadyum Sis Taksi olarak bölgedeki en hızlı ve güvenilir taksi çözümlerini sunuyoruz.</p>
 
-            <h2>K�y Yollar�ndan Şehre G�venli Ba�lant�</h2>
-            <p>B�lgenin co�rafi yap�s�na hakim, yollar� iyi bilen tecr�beli �of�rlerimizle hizmetinizdeyiz. �ster k�y
-                i�inden merkeze inmek isteyin, ister merkezden Boynuyo�un'daki ba� evine veya ikametinize d�nmek
-                isteyin; bizi arad���n�zda bekletmeden yola ��k�yoruz. Ara�lar�m�z zorlu yol ko�ullar�na uygundur ve
-                konforunuzdan �d�n vermeden g�venli bir seyahat sunar.</p>
-
-            <h3>7/24 Acil Ula��m Deste�i</h3>
-            <p>Şehir merkezine uzak b�lgelerde acil durumlar daha stresli olabilir. Gece yar�s� sa�l�k sorunu
-                ya�ad���n�zda, ila� alman�z gerekti�inde veya acil bir i�iniz ��kt���nda, Boynuyo�un taksi hizmetimiz
-                bir telefon uza��n�zdad�r. Bizi ailenizin taksicisi olarak g�rebilir, her t�rl� ula��m ihtiyac�n�zda
-                �ekinmeden arayabilirsiniz.</p>
+            <h2>Bölgeye Hakim Tecrübeli Şoförler</h2>
+            <p>Boynuyoğun bölgesinin tüm sokaklarına hakimiz. Konumunuzu WhatsApp üzerinden gönderdiğiniz anda en kısa rotadan yanınıza ulaşıyoruz. Temiz, konforlu araçlarımız ve güvenilir ekibimizle yolculuğunuzun tadını çıkarın. Uzaklık veya saat bizim için sorun değil; 7/24 kesintisiz hizmet veriyoruz.</p>
 
             <div class="cta-block">
-                <h3>Boynuyo�un'da Taksi �a��r</h3>
-                <p>Uzakl�k sorun de�il, hemen geliyoruz.</p>
-                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                    <a href="https://wa.me/905301309101" class="btn btn-primary">WhatsApp Konum</a>
+                <h3>Hemen Taksi Çağırın</h3>
+                <p>Beklemek yok, güvenli ulaşım var.</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <button type="button" class="btn btn-primary" onclick="document.getElementById('mobileAppPanel').scrollIntoView({behavior: 'smooth'})">Yukarı Dön ve Taksi Çağır</button>
                     <a href="tel:+905301309101" class="btn btn-secondary">Hemen Ara</a>
                 </div>
             </div>
 
-            <h2>Piknik ve Mesire Alanlar�na Ula��m</h2>
-            <p>Boynuyo�un �evresindeki ye�il alanlara, piknik b�lgelerine gitmek isteyen misafirlerimiz i�in de ideal
-                bir ula��m arac�d�r. Haftasonu ailecek planlad���n�z etkinliklerde, gidi�-d�n�� transferinizi
-                ayarlayabilir, g�n�n keyfini ��kar�rken ula��m� dert etmekten kurtulursunuz. Geni� ara�lar�m�z piknik
-                e�yalar�n�z i�in yeterli bagaj alan� sunar.</p>
-
             <div class="internal-links">
-                <h4>Hizmet B�lgeleri</h4>
+                <h4>Hizmet Bölgeleri</h4>
                 <div class="link-list">
                     <a href="akkuyu-taksi.html" class="link-tag">Akkuyu</a>
-                    <a href="hekimkoy-taksi.html" class="link-tag">Hekimk�y</a>
-                    <a href="sofulu-taksi.html" class="link-tag">Sofulu</a>
+                    <a href="atu-taksi.html" class="link-tag">ATÜ</a>
+                    <a href="balcali-taksi.html" class="link-tag">Balcalı</a>
+                    <a href="carkipare-taksi.html" class="link-tag">Çarkıpare</a>
+                    <a href="gultepe-taksi.html" class="link-tag">Gültepe</a>
+                    <a href="yesiltepe-taksi.html" class="link-tag">Yeşiltepe</a>
                     <a href="../index.html" class="link-tag">Ana Sayfa</a>
                 </div>
             </div>
@@ -101,17 +112,85 @@
 
     <!-- Floating Buttons -->
     <div class="floating-actions">
-        <a href="https://wa.me/905301309101" class="fab fab-whatsapp">
+        <!-- Replaced with a unique id so script.js sees it inside subpages -->
+        <a href="https://wa.me/905301309101" class="fab fab-whatsapp" id="fabBtnWhatsapp">
             <img src="../walogo.png" alt="WhatsApp" width="50" height="50" style="border-radius: 50%;">
         </a>
-        <a href="tel:+905301309101" class="fab fab-call"><svg viewBox="0 0 24 24" width="28" height="28"
-                fill="currentColor">
-                <path
-                    d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-            </svg></a>
+        <a href="tel:+905301309101" class="fab fab-call">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+        </a>
     </div>
-    <script src="../script.js"></script>
+
+    <!-- WhatsApp Script Logic for this page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const waBtns = document.querySelectorAll('#fabBtnWhatsapp, #mpBtnWhatsapp');
+            // Check if modal exists
+            if (!document.getElementById('locationModal')) {
+                const modalHTML = `
+                <div id="locationModal" class="modal-overlay">
+                    <div class="modal-content">
+                        <h3 class="modal-title">Konum Paylaşmak İster misiniz?</h3>
+                        <p>Size en yakın aracımızı yönlendirebilmemiz için WhatsApp üzerinden konumunuzu paylaşabilirsiniz.</p>
+                        <div class="modal-actions">
+                            <button id="btnLocationYes" class="btn-modal btn-yes">📍 Evet, Paylaş</button>
+                            <button id="btnLocationNo" class="btn-modal btn-no">Hayır, Devam Et</button>
+                        </div>
+                    </div>
+                </div>`;
+                document.body.insertAdjacentHTML('beforeend', modalHTML);
+            }
+            
+            const modal = document.getElementById('locationModal');
+            const btnYes = document.getElementById('btnLocationYes');
+            const btnNo = document.getElementById('btnLocationNo');
+            const PHONE_NUMBER = '905301309101';
+
+            waBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modal.style.display = 'flex';
+                });
+            });
+
+            btnNo.addEventListener('click', () => {
+                window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                modal.style.display = 'none';
+            });
+
+            btnYes.addEventListener('click', () => {
+                btnYes.textContent = 'Konum Alınıyor...';
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const lat = position.coords.latitude;
+                            const lng = position.coords.longitude;
+                            const mapLink = `https://www.google.com/maps?q=${lat},${lng}`;
+                            const message = `Merhaba, taksi çağırmak istiyorum. Bölge: Boynuyoğun. Konumum: ${mapLink}`;
+                            const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+                            window.location.href = url;
+                            btnYes.textContent = '📍 Evet, Paylaş';
+                            modal.style.display = 'none';
+                        },
+                        (error) => {
+                            window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                            btnYes.textContent = '📍 Evet, Paylaş';
+                            modal.style.display = 'none';
+                        }
+                    );
+                } else {
+                    window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                }
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
-

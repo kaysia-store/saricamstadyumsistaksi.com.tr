@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofulu Taksi | Sar��am Stadyum Sis Taksi</title>
-    <meta name="description"
-        content="Sofulu Mahallesi ve �evresinde 7/24 taksi hizmeti. G�venilir, h�zl� ve uygun fiyatl� taksi dura��. Hemen aray�n, kap�n�za gelelim.">
+    <title>Sofulu Taksi | Sarıçam Stadyum Sis Taksi</title>
+    <meta name="description" content="Sofulu yerleşim alanlarında veya Sofulu çöplüğü mevkiinden günün her saati taksi çağırabilirsiniz. Hızlı, güvenli ve ekonomik ulaşım.">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="manifest" href="../manifest.json">
     <meta name="theme-color" content="#f7b500">
     <link rel="canonical" href="https://saricamstadyumsistaksi.com.tr/pages/sofulu-taksi.html">
-    <meta property="og:title" content="Sofulu Taksi | Sar��am">
-    <meta property="og:description" content="Sofulu b�lgesinde h�zl� taksi.">
+    
+    <meta property="og:title" content="Sofulu Taksi | Sarıçam">
+    <meta property="og:description" content="Sofulu yerleşim alanlarında veya Sofulu çöplüğü mevkiinden günün her saati taksi çağırabilirsiniz. Hızlı, güvenli ve ekonomik ulaşım.">
     <meta property="og:type" content="website">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "name": "Sar��am Stadyum Sis Taksi - Sofulu",
-      "telephone": "+905301309101",
-      "areaServed": "Sofulu, Sar��am"
-    }
-    </script>
 
     <!-- HTTPS Force -->
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -33,15 +23,51 @@
         }
     </script>
 </head>
-
 <body>
-    <header class="header">
+
+    <!-- Mobile App Panel (Karşılama Ekranı) -->
+    <section class="mobile-app-panel" id="mobileAppPanel">
+        <div class="mp-content">
+            <div class="mp-logo">
+                <img src="../favicon.svg" alt="Sarıçam Taksi Logo">
+                <h2 class="mp-logo-text">SİS TAKSİ</h2>
+            </div>
+            <h1 class="mp-title">Hızlı Taksi Çağır</h1>
+            
+            <div class="mp-actions">
+                <a href="tel:+905301309101" class="mp-btn mp-btn-call">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>Telefonla Taksi Çağır</span>
+                </a>
+                
+                <button type="button" id="mpBtnWhatsapp" class="mp-btn mp-btn-wa">
+                    <img src="../walogo.png" alt="WhatsApp" width="24" height="24">
+                    <span>Whatsapp ile Taksi Çağır!</span>
+                </button>
+                
+                <button type="button" id="mpBtnSite" class="mp-btn mp-btn-site" onclick="document.getElementById('mainHeader').scrollIntoView({behavior: 'smooth'})">
+                    <span>Siteye Git</span>
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mp-footer">
+            <p class="mp-discount">Taksimetre de %30'a varan indirim!</p>
+            <p class="mp-seo-text">Sofulu yerleşim alanlarında veya Sofulu çöplüğü mevkiinden günün her saati taksi çağırabilirsiniz. Hızlı, güvenli ve ekonomik ulaşım.</p>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="header" id="mainHeader">
         <div class="container header-inner">
-            <div class="logo"><a href="../index.html" style="text-decoration:none; color:inherit;">SARI�AM STADYUM S�S
-                    <span>TAKS�</span></a></div>
+            <div class="logo">
+                <a href="../index.html" style="text-decoration:none; color:inherit;">
+                    SARIÇAM STADYUM SİS <span>TAKSİ</span>
+                </a>
+            </div>
             <nav class="nav-desktop">
                 <a href="../index.html">Ana Sayfa</a>
-                <a href="../index.html#iletisim">�leti�im</a>
             </nav>
             <div class="header-cta">
                 <a href="https://wa.me/905301309101" class="btn-header">WhatsApp</a>
@@ -50,47 +76,34 @@
         </div>
     </header>
 
+    <!-- Content -->
     <div class="container" style="padding: 4rem 1rem;">
         <div class="page-content">
-            <h1>Sofulu Taksi – Hizmetinizdeyiz</h1>
+            <h1>Sofulu Taksi Hizmeti</h1>
 
-            <p>Sar��am'�n geni� bir co�rafyaya yay�lan <strong>Sofulu</strong> b�lgesinde, ula��m konusunda ya�ad���n�z
-                s�k�nt�lar� bitiriyoruz. <strong>Stadyum Sis Taksi</strong> olarak, Sofulu'nun her noktas�na hakim,
-                deneyimli kadromuzla yan�n�zday�z. Gerek yerle�im yerlerinden gerekse i� sahalar�ndan 7 g�n 24 saat bizi
-                arayarak taksi talebinde bulunabilirsiniz.</p>
+            <p>Sofulu yerleşim alanlarında veya Sofulu çöplüğü mevkiinden günün her saati taksi çağırabilirsiniz. Hızlı, güvenli ve ekonomik ulaşım. Stadyum Sis Taksi olarak bölgedeki en hızlı ve güvenilir taksi çözümlerini sunuyoruz.</p>
 
-            <h2>Zaman�nda ve G�venli Hizmet</h2>
-            <p>Taksi �a��rd���n�zda en b�y�k beklentinizin "zaman�nda gelmesi" oldu�unun fark�nday�z. Sofulu b�lgesinde
-                konu�lanan ara�lar�m�zla, �a�r�n�z� al�r almaz harekete ge�iyoruz. Bekleme s�renizi minimuma indirerek,
-                randevunuza, i�inize veya evinize ge� kalmaman�z� sa�l�yoruz. Bak�ml� ve konforlu ara�lar�m�zla
-                yolculu�unuz g�ven i�inde ge�er.</p>
-
-            <h3>Her Yere Sabit ve Uygun Fiyat</h3>
-            <p>Sofulu'dan �ehir merkezine, hastanelere, otogara veya havaalan�na gitmek istedi�inizde fahi� fiyatlarla
-                kar��la�maktan korkmay�n. Dura��m�zda taksimetre a��l�� ve kilometre �cretleri standartlara uygundur ve
-                �effaft�r. Yolculu�unuzun ba��nda gidece�iniz yeri s�yleyerek tahmini tutar� ��renebilir, b�t�enizi buna
-                g�re planlayabilirsiniz.</p>
+            <h2>Bölgeye Hakim Tecrübeli Şoförler</h2>
+            <p>Sofulu bölgesinin tüm sokaklarına hakimiz. Konumunuzu WhatsApp üzerinden gönderdiğiniz anda en kısa rotadan yanınıza ulaşıyoruz. Temiz, konforlu araçlarımız ve güvenilir ekibimizle yolculuğunuzun tadını çıkarın. Uzaklık veya saat bizim için sorun değil; 7/24 kesintisiz hizmet veriyoruz.</p>
 
             <div class="cta-block">
-                <h3>Sofulu'da Taksi �a��r</h3>
-                <p>Bir telefonla yan�n�zday�z.</p>
-                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                    <a href="https://wa.me/905301309101" class="btn btn-primary">WhatsApp Konum</a>
+                <h3>Hemen Taksi Çağırın</h3>
+                <p>Beklemek yok, güvenli ulaşım var.</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <button type="button" class="btn btn-primary" onclick="document.getElementById('mobileAppPanel').scrollIntoView({behavior: 'smooth'})">Yukarı Dön ve Taksi Çağır</button>
                     <a href="tel:+905301309101" class="btn btn-secondary">Hemen Ara</a>
                 </div>
             </div>
 
-            <h2>7/24 Ula��labilirlik</h2>
-            <p>Gecenin bir yar�s� veya sabah�n erken saatleri fark etmeksizin, n�bet�i taksilerimiz Sofulu sokaklar�nda
-                hizmet vermektedir. Acil durumlarda pani�e kap�lmadan bizi arayabilir, en h�zl� �ekilde ula��m�n�z�
-                sa�layabilirsiniz. �nceli�imiz her zaman m��teri memnuniyeti ve g�venli�idir.</p>
-
             <div class="internal-links">
-                <h4>Hizmet B�lgeleri</h4>
+                <h4>Hizmet Bölgeleri</h4>
                 <div class="link-list">
-                    <a href="menekse-taksi.html" class="link-tag">Menek�e</a>
                     <a href="akkuyu-taksi.html" class="link-tag">Akkuyu</a>
-                    <a href="boynuyogun-taksi.html" class="link-tag">Boynuyoğun</a>
+                    <a href="atu-taksi.html" class="link-tag">ATÜ</a>
+                    <a href="balcali-taksi.html" class="link-tag">Balcalı</a>
+                    <a href="carkipare-taksi.html" class="link-tag">Çarkıpare</a>
+                    <a href="gultepe-taksi.html" class="link-tag">Gültepe</a>
+                    <a href="yesiltepe-taksi.html" class="link-tag">Yeşiltepe</a>
                     <a href="../index.html" class="link-tag">Ana Sayfa</a>
                 </div>
             </div>
@@ -99,17 +112,85 @@
 
     <!-- Floating Buttons -->
     <div class="floating-actions">
-        <a href="https://wa.me/905301309101" class="fab fab-whatsapp">
+        <!-- Replaced with a unique id so script.js sees it inside subpages -->
+        <a href="https://wa.me/905301309101" class="fab fab-whatsapp" id="fabBtnWhatsapp">
             <img src="../walogo.png" alt="WhatsApp" width="50" height="50" style="border-radius: 50%;">
         </a>
-        <a href="tel:+905301309101" class="fab fab-call"><svg viewBox="0 0 24 24" width="28" height="28"
-                fill="currentColor">
-                <path
-                    d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-            </svg></a>
+        <a href="tel:+905301309101" class="fab fab-call">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+        </a>
     </div>
-    <script src="../script.js"></script>
+
+    <!-- WhatsApp Script Logic for this page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const waBtns = document.querySelectorAll('#fabBtnWhatsapp, #mpBtnWhatsapp');
+            // Check if modal exists
+            if (!document.getElementById('locationModal')) {
+                const modalHTML = `
+                <div id="locationModal" class="modal-overlay">
+                    <div class="modal-content">
+                        <h3 class="modal-title">Konum Paylaşmak İster misiniz?</h3>
+                        <p>Size en yakın aracımızı yönlendirebilmemiz için WhatsApp üzerinden konumunuzu paylaşabilirsiniz.</p>
+                        <div class="modal-actions">
+                            <button id="btnLocationYes" class="btn-modal btn-yes">📍 Evet, Paylaş</button>
+                            <button id="btnLocationNo" class="btn-modal btn-no">Hayır, Devam Et</button>
+                        </div>
+                    </div>
+                </div>`;
+                document.body.insertAdjacentHTML('beforeend', modalHTML);
+            }
+            
+            const modal = document.getElementById('locationModal');
+            const btnYes = document.getElementById('btnLocationYes');
+            const btnNo = document.getElementById('btnLocationNo');
+            const PHONE_NUMBER = '905301309101';
+
+            waBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modal.style.display = 'flex';
+                });
+            });
+
+            btnNo.addEventListener('click', () => {
+                window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                modal.style.display = 'none';
+            });
+
+            btnYes.addEventListener('click', () => {
+                btnYes.textContent = 'Konum Alınıyor...';
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const lat = position.coords.latitude;
+                            const lng = position.coords.longitude;
+                            const mapLink = `https://www.google.com/maps?q=${lat},${lng}`;
+                            const message = `Merhaba, taksi çağırmak istiyorum. Bölge: Sofulu. Konumum: ${mapLink}`;
+                            const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+                            window.location.href = url;
+                            btnYes.textContent = '📍 Evet, Paylaş';
+                            modal.style.display = 'none';
+                        },
+                        (error) => {
+                            window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                            btnYes.textContent = '📍 Evet, Paylaş';
+                            modal.style.display = 'none';
+                        }
+                    );
+                } else {
+                    window.location.href = `https://wa.me/${PHONE_NUMBER}`;
+                }
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
-
