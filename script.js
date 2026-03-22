@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 
     // WhatsApp Button Logic
-    const whatsappBtns = document.querySelectorAll('.fab-whatsapp, .btn-header[href*="wa.me"], a[href*="wa.me"]');
+    const whatsappBtns = document.querySelectorAll('.fab-whatsapp, .btn-header[href*="wa.me"], a[href*="wa.me"], #mpBtnWhatsapp');
     const modal = document.getElementById('locationModal');
     const btnYes = document.getElementById('btnLocationYes');
     const btnNo = document.getElementById('btnLocationNo');

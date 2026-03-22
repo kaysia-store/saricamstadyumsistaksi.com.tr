@@ -9,7 +9,7 @@ const ASSETS_TO_CACHE = [
     '/pages/akkuyu-taksi.html',
     '/pages/atu-taksi.html',
     '/pages/balcali-taksi.html',
-    '/pages/boynuyon-taksi.html',
+    '/pages/boynuyogun-taksi.html',
     '/pages/carkipare-taksi.html',
     '/pages/cinarli-taksi.html',
     '/pages/cukurova-universitesi-taksi.html',
