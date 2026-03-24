@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://saricamtaksi.com/sitemap.xml
+Sitemap: https://saricamsistaksi.com.tr/sitemap.xml
